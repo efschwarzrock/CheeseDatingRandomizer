@@ -5,7 +5,7 @@ function getSeatingChart(){
     
     if(checkIfNums(numCheeses, numStudents, tablesPer)){
         let chart = calculateSeatingChart(Number(numStudents), Number(numCheeses), Number(tablesPer));
-        document.getElementById("output").innerHTML = "Rounds ->(each student's schedual is a row)<br>" + chart
+        document.getElementById("output").innerHTML = "Rounds ->(each student's schedule is a row)<br>" + chart
     }else{
         document.getElementById("output").innerHTML = "One of the values was not a number or negative"
     }
